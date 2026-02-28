@@ -55,5 +55,38 @@ print("List after inserting values:", my_list)
 
 ## enumerate
 for index, value in enumerate(my_list): # This will iterate over the list and return both the index and the value of each element in the list
-    print("Index:", index, "Value:", value) 
+    print("Index:", index, "Value:", value)
 
+## len
+length_of_list = len(my_list) # This will return the number of elements in the list
+print("Length of list:", length_of_list)
+
+## comprehension
+squared_list = [x**2 for x in my_list] # This will create a new list that contains the squares of the elements in the original list using list comprehension
+print("Squared list:", squared_list)
+
+## range
+for i in range(5): # This will iterate over the range of numbers from 0 to 4 and print each number
+    print("Range value:", i)
+    
+## loop with range
+for i in range(len(my_list)): # This will iterate over the range of numbers from 0 to the length of the list and print the index and the value of each element in the list
+    print("Index:", i, "Value:", my_list[i])
+
+for i in range(60, 70): # This will iterate over the range of numbers from 1 to 5 and print each number
+    my_list.append(i)
+print("List after appending range values:", my_list)
+
+## nested loop
+for i in range(3): # This will iterate over the range of numbers from 0 to 2 and print the value of i
+    for j in range(3): # This will iterate over the range of numbers from 0 to 2 and print the value of j
+        print("i:", i, "j:", j)
+
+item_list = ["apple", "banana", "cherry", "date", "fig", "grape"]
+print("Original list of items:", item_list)
+len_list = [len(item) for item in item_list] # This will create a new list that contains the lengths of the strings in the original list using list comprehension
+print("List of item lengths:", len_list)
+
+## nested list
+pair =  [[i,j] for i in item_list for j in len_list]
+print("Nested list of pairs:", pair)
