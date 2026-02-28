@@ -47,3 +47,13 @@ print("F-String:", f_string)
 # For loop to iterate over a list
 for i in my_list:
     print(i)
+print(" LIST ",my_list[0:3])
+players = ["Alice", "Bob", "Charlie", "David", "Eve"]
+# For loop to iterate over a list of players    
+for player in players:
+    print(player)
+
+print("Players List:", players[0:3])
+print("Players List:", players[:3])
+print("Players List:", players[-4:])
+print("Players List:", players[:-3])
