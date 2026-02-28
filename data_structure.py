@@ -23,3 +23,27 @@ my_list[2]=15
 print("Updated List:",my_list)
 ## List are mutable, we can change the value of list but tuple are immutable we can't change the value of tuple
 # my_tuple[2]=15 # This will raise an error because tuple is immutable 
+## Set is also mutable but it does not allow duplicate values, so it will only keep one instance of the value 5 in the set.
+# my_set[2]=15 # This will raise an error because set is mutable but it does not support indexing
+my_dict['c']=15 # This will update the value of key 'c' to 15 in the dictionary
+print("Updated Dictionary:",my_dict)
+## String is immutable, we can't change the value of string
+# my_string[0]='h' # This will raise an error because string is immutable
+# We can use slicing to get a substring from the string
+substring = my_string[0:5] # This will get the substring "Hello" from the string
+print("Substring:", substring) 
+## We can also use string concatenation to create a new string
+new_string = my_string + " How are you?" # This will create a new string "Hello, World! How are you?" by concatenating the original string with another string
+print("New String:", new_string)
+# We can also use string formatting to create a new string
+formatted_string = "My name is {} and I am {} years old.".format("Tyagi", 30) # This will create a new string "My name is Tyagi and I am 30 years old." by using string formatting
+print("Formatted String:", formatted_string)
+## We can also use f-strings to create a new string
+name = "Tyagi"
+age = 30
+f_string = f"My name is {name} and I am {age} years old." # This will create a new string "My name is Tyagi and I am 30 years old." by using f-strings
+print("F-String:", f_string)
+# Loops
+# For loop to iterate over a list
+for i in my_list:
+    print(i)
