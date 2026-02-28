@@ -18,3 +18,8 @@ print ("String:", my_string)
 print("Split List:",my_list[0:2])
 print("Split List:",my_list[:3])
 print("Split List:",my_list[-2])
+print("Main List:",my_list)
+my_list[2]=15
+print("Updated List:",my_list)
+## List are mutable, we can change the value of list but tuple are immutable we can't change the value of tuple
+# my_tuple[2]=15 # This will raise an error because tuple is immutable 
