@@ -90,3 +90,41 @@ print("List of item lengths:", len_list)
 ## nested list
 pair =  [[i,j] for i in item_list for j in len_list]
 print("Nested list of pairs:", pair)
+
+## tuple
+my_tuple = (1, 2, 3, 4, 5)
+print("Tuple:", my_tuple)   
+print("Index of 3 in tuple:", my_tuple.index(3)) # This will return the index of the first occurrence of the value 3 in the tuple
+print("Count of 3 in tuple:", my_tuple.count(3))  # This will return the number of occurrences of the value 3 in the tuple
+
+a,b,c,d = (1,2,(2,3,4),'tyagi') # This will unpack the values from the tuple into the variables a, b, c, and d
+print("a:", a)
+print("b:", b)
+print("c:", c)
+print("d:", d)
+print("Unpacked values from tuple:", a, b, c, d)
+print("Unpacked values from tuple:", a, b, c[0], c[1], c[2], d)
+
+name,*fruit,sweet = ('navneet','apple','mango','jalabi') # This will unpack the values from the tuple into the variable name and sweet, and the remaining values will be packed into the variable fruit using the * operator
+print("Name:", name)
+print("Fruit:", fruit)
+print("Sweet:", sweet)
+
+## loop for nested tuple
+nested_tuple = ((1, 2), ("shiv", "ram"), (5, 6))
+for inner_tuple in nested_tuple: # This will iterate over the outer tuple and print each inner tuple
+    print("Inner tuple:", inner_tuple)
+    for value in inner_tuple: # This will iterate over each inner tuple and print each value
+        print("Value:", value)  
+        
+for i in nested_tuple: # This will iterate over the outer tuple and print each inner tuple
+    ##print("Inner tuple:", i)
+    for j in i: # This will iterate over each inner tuple and print each value
+        print(j, sep=" ")
+    print(" ")
+
+tup_1=(1,2,3,4)
+tup_2=(5,6,7,8)
+tuple_3=tup_1+tup_2 # This will concatenate the two tuples and create a new tuple
+print("Concatenated tuple:", tuple_3)
+print("Extended tuple:", tuple_3*2) # This will repeat the elements of the tuple twice and create a new tuple
